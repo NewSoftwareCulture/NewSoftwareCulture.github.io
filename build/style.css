@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #fff;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 70px;
+  width: 100vw;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:focus {
+  border: blue solid 2px;
+}
+
+.logo {
+  margin-left: 3vw;
+}
+
+.navbar__list {
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar__item {
+  margin: auto 20px;
+  float: left;
+}
+.navbar__btn {
+  margin: auto 2vw auto 20px;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.navbar__btn:hover {
+  box-shadow: 0 0 3px blue;
+}
+.navbar__btn:active {
+  background-color: blue;
+  border-color: white;
+}
+
+main {
+  padding-top: 70px;
+}
+
+.preview {
+  height: 50vh;
+  width: 100vw;
+  background-color: #FF6A76;
+}
+.preview__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.preview__block {
+  height: 100%;
+  max-width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.preview__content {
+  padding-top: 25%;
+}
+.preview__title {
+  line-height: 11vh;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+  letter-spacing: 2vw;
+  font-size: 15vh;
+  text-transform: uppercase;
+}
+.preview__subtitle {
+  color: white;
+  font-size: 20px;
+}
+.preview__svg {
+  height: 100%;
+  max-width: 80%;
+  padding-left: 10%;
+}
+
+.content {
+  margin: 70px auto 70px auto;
+  width: 100vw;
+  justify-content: center;
+}
+
+.skills {
+  max-width: 60%;
+  margin: auto;
+}
+.skills__title {
+  font-size: 50px;
+  margin: 50px auto 50px;
+  text-align: center;
+}
+.skills__container {
+  display: flex;
+  margin: 30px auto 30px auto;
+}
+.skills__subtitle {
+  font-size: 30px;
+  flex: 2;
+}
+.skills__info {
+  font-size: 20px;
+  line-height: 40px;
+  flex: 6;
+}
+
+.projects {
+  max-width: 70%;
+  margin: auto;
+}
+.projects__title {
+  font-size: 50px;
+  margin: 50px auto 50px;
+  text-align: center;
+}
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+  width: 300px;
+  height: 500px;
+  color: blue;
+  background-color: #D6ECFF;
+  border: blue solid 2px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.card__title {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.card__content {
+  display: flex;
+  margin: 15px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 165px);
+  background-color: white;
+}
+.card__picture {
+  width: 80%;
+}
+.card__link {
+  margin: auto;
+}
+.card__btn {
+  margin: 15px;
+  border: white solid 3px;
+  cursor: pointer;
+  width: 270px;
+  height: 50px;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: #0054FF;
+  color: white;
+}
+.card__btn:hover {
+  background-color: white;
+  color: #0054FF;
+  border-color: #0054FF;
+  box-shadow: 0 0 5px #0054FF;
+}
+.card--red {
+  color: white;
+  background-color: #FF8955;
+  border-color: #e42525;
+}
+.card--blue {
+  color: white;
+  background-color: #1865ca;
+  border-color: #2825e4;
+}
+.card--yellow {
+  color: #fc7012;
+  background-color: #FFF5AF;
+  border-color: #fc9e12;
+}
+
+.footer {
+  width: 100vw;
+  height: 60px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #808080;
+}
+.footer__author {
+  color: #afadad;
+  margin-left: 50px;
+}
+.footer__list {
+  list-style-type: none;
+  display: flex;
+  margin-right: 50px;
+}
+.footer__item {
+  margin-left: 10px;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

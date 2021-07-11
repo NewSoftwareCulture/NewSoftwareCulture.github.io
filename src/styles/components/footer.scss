@@ -1,0 +1,26 @@
+.footer {
+  width: 100vw;
+  height: 60px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $footer_background_color;
+
+  &__author {
+    color: $footer_author_background_color;
+    margin-left: 50px;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    margin-right: 50px;
+  }
+
+  &__item {
+    margin-left: 10px;
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+}

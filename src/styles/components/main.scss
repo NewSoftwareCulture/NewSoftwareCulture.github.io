@@ -1,0 +1,169 @@
+main {
+  padding-top: 70px;
+}
+
+.preview {
+  height: 50vh;
+  width: 100vw;
+  background-color: $preview_background_color;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  &__block {
+    height: 100%;
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    padding-top: 25%;
+  }
+
+  &__title {
+    line-height: 11vh;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    letter-spacing: 2vw;
+    font-size: 15vh;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: white;
+    font-size: 20px;
+  }
+
+  &__svg {
+    height: 100%;
+    max-width: 80%;
+    padding-left: 10%;
+  }
+}
+
+.content {
+  margin: 70px auto 70px auto;
+  width: 100vw;
+  justify-content: center;
+}
+
+.skills {
+  max-width: 60%;
+  margin: auto;
+
+  &__title {
+    font-size: 50px;
+    margin: 50px auto 50px;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    margin: 30px auto 30px auto;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    flex: 2;
+  }
+
+  &__info {
+    font-size: 20px;
+    line-height: 40px;
+    flex: 6;
+  }
+}
+
+.projects {
+  max-width: 70%;
+  margin: auto;
+
+  &__title {
+    font-size: 50px;
+    margin: 50px auto 50px;
+    text-align: center;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+    justify-content: center;
+  }
+}
+
+.card {
+  margin: 20px;
+  width: 300px;
+  height: 500px;
+  color: blue;
+  background-color: $card_background_color;
+  border: blue solid 2px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    display: flex;
+    margin: 15px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 165px);
+    background-color: white;
+  }
+
+  &__picture {
+    width: 80%;
+  }
+
+  &__link {
+    margin: auto;
+  }
+
+  &__btn {
+    margin: 15px;
+    border: white solid 3px;
+    cursor: pointer;
+    width: 270px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: $button_background_color;
+    color: white;  
+  }
+  &__btn:hover {
+    background-color: white;
+    color: $button_background_color;
+    border-color: $button_background_color;
+    box-shadow: 0 0 5px $button_background_color;
+  }
+
+  &--red {
+    color: white;
+    background-color: #FF8955;
+    border-color: rgb(228, 37, 37);
+  }
+  &--blue {
+    color: white;
+    background-color: #1865ca;
+    border-color: rgb(40, 37, 228);
+  }
+  &--yellow {
+    color: rgb(252, 112, 18);
+    background-color: #FFF5AF;
+    border-color: rgb(252, 158, 18);
+  }
+}
